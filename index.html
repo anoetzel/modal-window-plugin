@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="content">
+    <button class="btn" data-path="first" data-animation="fadeInUp" data-speed="400">Open window 1</button>
+    <button class="btn" data-path="second">Open window 2</button>
+  </div>
+  <div class="modal">
+    <div class="modal__container" data-target="first">
+      <button class="modal__close">x</button>
+      <div class="modal__content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, hic quos laboriosam</p>
+        <input class="modal__input" type="text" placeholder="Name">
+        <button class="btn modal__btn">Send</button>
+
+      </div>
+    </div>
+    <div class="modal__container" data-target="second">
+      <button class="modal__close">x</button>
+      <div class="modal__content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, voluptate!</p>
+      </div>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
